@@ -1,0 +1,245 @@
+$grid-gutter-width: 10px;
+$container-large-desktop: 1024px;
+$box-shadow: 0 4px 0 0 rgba(64, 55, 55, 0.5);
+@import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+$peraltared: rgb(179, 41, 46);
+@mixin borderbottom {
+  border-bottom: 2px solid rgba(74, 73, 73, 0.8);
+}
+
+* {
+  -webkit-webkit: border-box;
+  -moz-webkit: border-box;
+  -ms-webkit: border-box;
+  -o-webkit: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("http://lukaszgrzywacz.com/wp-content/uploads/2012/08/lukasz-grzywacz-kingsof-concrete_.jpg");
+   -webkit-background-size: cover;
+}
+
+
+.social {
+    margin-top: 5px;
+
+    }
+      .subscribe {
+          a {
+          color: white;
+          position: relative;
+          top: 20px;
+          left: 25px;
+          text-transform: uppercase;
+        }
+      }
+    li {
+      list-style: none;
+      display: inline-block;
+      float: right;
+    }
+
+
+
+
+
+
+.carousel img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.nav {
+
+    background-color: $peraltared;
+    border-color: $peraltared;
+    border-radius: 0px;
+    color: white;
+    margin-bottom: 17px;
+    margin-top: 10px;
+    text-transform: uppercase;
+
+
+    box-shadow: $box-shadow;
+
+    p {
+      padding-top: 8px;
+
+      a {
+        color: white;
+      }
+    }
+
+    &:hover {
+      background-color: white;
+
+      a {
+      color: $peraltared;
+      }
+    }
+
+
+  }
+
+.dropdown {
+  background-color: $peraltared;
+  padding: 8px 8px 8px 8px;
+  margin-bottom: 10px;
+
+  .btn {
+    background-color: gray;
+    border-color: $peraltared;
+    color: black;
+  }
+  .dropdown-menu {
+    background-color: black;
+
+    a {
+      color: $peraltared;
+    }
+  }
+
+}
+
+.skate-articles {
+    .skate {
+
+      height: 430px;
+      margin-top: 30px;
+      margin-bottom: 36px;
+      border: .3px solid black;
+      background-color: rgb(253, 253, 253);
+      box-shadow: $box-shadow;
+      padding: 0 34px 0 34px;
+
+      .date {
+        color: rgb(173, 173, 173);
+      }
+    }
+    .readmore {
+      color: $peraltared;
+      font-weight: bold;
+      align-content: center;
+
+    }
+
+}
+
+.skater-pictures {
+
+  .skater img {
+    margin-bottom: 5px;
+  }
+  .skater4 img {
+   height: 478px;
+  }
+  .skater3 {
+    padding: 0;
+  }
+
+}
+
+
+
+
+.deckimage {
+  img {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+
+.contact-form {
+  background-color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  box-shadow: $box-shadow;
+
+  .form-icons {
+    float: left;
+    position: relative;
+    top: 75px;
+    margin-right: 10px;
+
+  }
+
+
+  .inputs, .contact-paragraph {
+    padding: 38px;
+  }
+
+
+
+
+
+  }
+  p {
+    line-height: 2;
+  }
+
+  .form-group {
+    .form-control {
+        box-shadow: inset 2px 2px 0 0 rgba(64, 55, 55, 0.5);
+        border-radius: 0px;
+      }
+    .submit {
+      background-color: $peraltared;
+      color: white;
+      float: right;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      width: 248px;
+      height: 40px;
+      border-radius: 0%;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: white;
+        color: $peraltared;
+
+
+      }
+
+    }
+  }
+
+
+/* media  queries */
+
+@media (max-width: 768px) {
+
+
+
+  .skater-pictures {
+
+    .skater
+
+      img {
+        width: 50%;
+      }
+
+
+
+      .picture2 img {
+        float: right;
+      }
+    }
+    .skater4 img {
+      height: 200px;
+    }
+    .skater3 {
+      padding: 0;
+      width: 100%;
+    }
+
+  }
+
+  .contact-form {
+    height: 400px;
+    .inputs, .contact-paragraph {
+      padding: 10px;
+  }
+}
